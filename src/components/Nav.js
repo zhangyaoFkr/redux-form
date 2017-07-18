@@ -48,6 +48,7 @@ class Nav extends Component {
           {this.renderItem('/docs/GettingStarted.md', 'Getting Started')}
           {this.renderItem('/docs/MigrationGuide.md', '`v6` Migration Guide')}
           {this.renderItem('/docs/ValueLifecycle.md', 'Value Lifecycle')}
+          {this.renderItem('/docs/Flow.md', 'Flow')}
           {this.renderItem('/docs/api', 'API')}
           {this.renderItem('/docs/api/ReduxForm.md', '`reduxForm()`', 1)}
           {this.renderItem('/docs/api/Props.md', '`props`', 1)}

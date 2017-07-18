@@ -4,7 +4,7 @@ import Prism from '../vendor/prism'
 import styles from './Markdown.scss'
 
 const prettify = markdown =>
-  markdown.replace(/```(?:javascript|js)([\s\S]+?)```/g,
+  markdown.replace(/```(?:javascript|js|jsx)([\s\S]+?)```/g,
     (match, code) =>
       `<pre class="language-jsx"><code class="language-jsx">${Prism.highlight(code, Prism.languages.jsx)}</code></pre>`)
 

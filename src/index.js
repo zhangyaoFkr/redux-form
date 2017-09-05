@@ -12,6 +12,6 @@ export {
   App,
   Code,
   Markdown,
-  Sponsor
+  Sponsor,
   Values
 }

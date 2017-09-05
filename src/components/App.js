@@ -31,6 +31,7 @@ const App = ({ children, path, version, breadcrumbs }) => {
           ) : (
             <div>
               <Breadcrumbs items={breadcrumbs} />
+              <Sponsor />
               {children}
             </div>
           )}

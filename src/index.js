@@ -4,6 +4,7 @@ import App from './components/App'
 import Code from './components/Code'
 import Markdown from './components/Markdown'
 import Values from './components/Values'
+import Sponsor from './components/Sponsor'
 
 export {
   render,
@@ -11,5 +12,6 @@ export {
   App,
   Code,
   Markdown,
+  Sponsor
   Values
 }

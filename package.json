@@ -28,7 +28,7 @@
     "react-dom": "^15.6.1",
     "react-redux": "^5.0.6",
     "redux": "^3.4.0",
-    "redux-form": "^7.0.3"
+    "redux-form": "^7.0.4"
   },
   "devDependencies": {
     "autoprefixer-loader": "^3.1.0",
@@ -40,8 +40,11 @@
     "cross-env": "^5.0.5",
     "css-loader": "^0.28.7",
     "eslint": "^4.6.1",
-    "eslint-config-rackt": "^1.1.1",
+    "eslint-config-react-app": "^2.0.0",
     "eslint-plugin-babel": "^4.1.2",
+    "eslint-plugin-flowtype": "^2.35.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
     "eslint-plugin-react": "^7.3.0",
     "expect": "^21.0.0",
     "express": "^4.15.4",

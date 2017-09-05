@@ -8,7 +8,7 @@ export default () => (
     >
       <img
         src="https://app.codesponsor.io/embed/P3WjkUw9LiYdiQBdHrtHZSSL/erikras/redux-form.svg"
-        style="width: 888px; height: 68px;"
+        style={{ width: 888, height: 68 }}
         alt="Sponsor"
       />
     </a>

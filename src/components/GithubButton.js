@@ -12,19 +12,21 @@ const GithubButton = ({ user, repo, type, width, height, count, large }) => {
   return (
     <iframe
       src={src}
+      title="GitHub Buttons"
       frameBorder="0"
       allowTransparency="true"
       scrolling="0"
       width={width}
       height={height}
-      style={{ border: 'none', width: width, height: height }}></iframe>
+      style={{ border: 'none', width: width, height: height }}
+    />
   )
 }
 
 GithubButton.propTypes = {
   user: PropTypes.string.isRequired,
   repo: PropTypes.string.isRequired,
-  type: PropTypes.oneOf([ 'star', 'watch', 'fork', 'follow' ]).isRequired,
+  type: PropTypes.oneOf(['star', 'watch', 'fork', 'follow']).isRequired,
   width: PropTypes.number.isRequired,
   height: PropTypes.number.isRequired,
   count: PropTypes.bool,

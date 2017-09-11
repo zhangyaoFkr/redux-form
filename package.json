@@ -1,6 +1,6 @@
 {
   "name": "redux-form-website-template",
-  "version": "0.0.64",
+  "version": "0.0.65",
   "description": "The template for the redux-form website",
   "main": "./dist/bundle.js",
   "repository": {
@@ -31,7 +31,7 @@
     "react-redux": "^5.0.6",
     "redux": "^3.4.0",
     "redux-form": "^7.0.4",
-    "redux-form-doc-version-checker": "^1.0.2"
+    "redux-form-doc-version-checker": "^1.0.3"
   },
   "devDependencies": {
     "autoprefixer-loader": "^3.1.0",

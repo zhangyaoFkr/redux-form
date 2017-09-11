@@ -6,6 +6,7 @@ import Breadcrumbs from './Breadcrumbs'
 import Sponsor from './Sponsor'
 import TwitterFollowButton from './TwitterFollowButton'
 import cx from 'classnames'
+import DocCheck from 'redux-form-doc-version-checker'
 
 const App = ({ children, path, version, breadcrumbs }) => {
   const isHome = path === '/'
@@ -64,6 +65,7 @@ const App = ({ children, path, version, breadcrumbs }) => {
           </div>
         </div>
       </div>
+      <DocCheck />
     </div>
   )
 }

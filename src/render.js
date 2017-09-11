@@ -1,5 +1,5 @@
 import React from 'react'
-import { renderToString } from 'react-dom/server'
+import { renderToString } from 'react-dom'
 import App from './components/App'
 
 const render = ({ component, title, path, version, breadcrumbs }) =>
@@ -33,8 +33,10 @@ const render = ({ component, title, path, version, breadcrumbs }) =>
       <App {...{ version, path, breadcrumbs }}>{component}</App>
     )}
   </div>
+  <script src="https://unpkg.com/react@15.6.1/dist/react.min.js" integrity="sha384-u/3By6KAUETM5AnedAbB9xV0qLxlsRyVBi8mEekTeqD468SBVx2FXEm+1lf85M7c" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@15.6.1/dist/react-dom.min.js" integrity="sha384-GfT+iyYg21YqdPMH/FWlWLugDiK/neASGRCN8yWPB2Hlam+uP7J0lIgPcbCeHoVG" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/redux-form-doc-version-checker/dist/doc-check.umd.min.js"></script>
-  <script src="https://redux-form.com/${version}/bundle.js"></script>
+  <script src="https://unpkg.com/redux-form-website-template/dist/bundle.js"></script>
   <script>initReact(${JSON.stringify({ version, path, breadcrumbs })})</script>
   <script>
     (function(i,s,o,g,r,a,m){i[ 'GoogleAnalyticsObject' ] = r;i[r]=i[r]||function(){

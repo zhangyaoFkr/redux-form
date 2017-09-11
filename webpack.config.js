@@ -3,16 +3,10 @@ var webpack = require('webpack')
 var env = process.env.NODE_ENV
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 
-var reactExternal = {
-  root: 'React',
-  commonjs2: 'react',
-  commonjs: 'react',
-  amd: 'react'
-}
-
 module.exports = {
   externals: {
-    react: reactExternal
+    react: 'React',
+    'react-dom': 'ReactDOM'
   },
   entry: {
     main: ['./src/client.js']

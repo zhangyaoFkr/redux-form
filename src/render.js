@@ -11,7 +11,7 @@ const render = ({ component, title, path, version, breadcrumbs }) =>
     <title>Redux Form${title && ` - ${title}`}</title>
     <link href="https://redux-form.com/${version}/bundle.css"
       media="screen, projection" rel="stylesheet" type="text/css"/>
-    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css"
           media="screen, projection" rel="stylesheet" type="text/css"/>
     <meta itemprop="name" content="Redux Form"/>
     <meta property="og:type" content="website"/>
@@ -29,8 +29,13 @@ const render = ({ component, title, path, version, breadcrumbs }) =>
   </head>
   <body>
   <div id="content">
-    ${renderToString(<App {...{ version, path, breadcrumbs }}>{component}</App>)}
+    ${renderToString(
+      <App {...{ version, path, breadcrumbs }}>{component}</App>
+    )}
   </div>
+  <script src="https://unpkg.com/react@15.6.1/dist/react.min.js" integrity="sha384-u/3By6KAUETM5AnedAbB9xV0qLxlsRyVBi8mEekTeqD468SBVx2FXEm+1lf85M7c" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@15.6.1/dist/react-dom.min.js" integrity="sha384-GfT+iyYg21YqdPMH/FWlWLugDiK/neASGRCN8yWPB2Hlam+uP7J0lIgPcbCeHoVG" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/redux-form-doc-version-checker/dist/doc-check.umd.min.js"></script>
   <script src="https://redux-form.com/${version}/bundle.js"></script>
   <script>initReact(${JSON.stringify({ version, path, breadcrumbs })})</script>
   <script>

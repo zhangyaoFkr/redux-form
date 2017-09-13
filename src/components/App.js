@@ -32,13 +32,12 @@ const App = ({ children, path, version, breadcrumbs }) => {
           ) : (
             <div>
               <Breadcrumbs items={breadcrumbs} />
-              <Sponsor />
               {children}
             </div>
           )}
         </div>
         <div className={styles.footer}>
-          <Sponsor theme="dark" />
+          {isHome && <Sponsor width={330} height={240} dark />}
           <div>Created by Erik Rasmussen</div>
           <div>
             Got questions? Ask for help:

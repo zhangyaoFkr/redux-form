@@ -1,21 +1,11 @@
 import React from 'react'
 
-export default () => (
-  <div style={{ textAlign: 'center' }}>
-    <a
-      href="https://app.codesponsor.io/link/P3WjkUw9LiYdiQBdHrtHZSSL/erikras/redux-form"
-      rel="nofollow"
-      target="_blank"
-      style={{
-        background: 'rgba(255, 255, 255, 0.9)',
-        display: 'inline-block'
-      }}
-    >
-      <img
-        src="https://app.codesponsor.io/embed/P3WjkUw9LiYdiQBdHrtHZSSL/erikras/redux-form.svg"
-        style={{ width: 888, height: 68 }}
-        alt="Sponsor"
-      />
-    </a>
+export default ({ theme } = { theme: 'light' }) => (
+  <div>
+    <div id="code-sponsor-widget" style={{ textAlign: 'center' }} />
+    <script
+      type="text/javascript"
+      src={`https://app.codesponsor.io/scripts/O6JC6ZWFGnkPaSiGV6rGzA?theme=${theme}`}
+    />
   </div>
 )

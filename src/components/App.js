@@ -38,7 +38,7 @@ const App = ({ children, path, version, breadcrumbs }) => {
           )}
         </div>
         <div className={styles.footer}>
-          <Sponsor />
+          <Sponsor theme="dark" />
           <div>Created by Erik Rasmussen</div>
           <div>
             Got questions? Ask for help:

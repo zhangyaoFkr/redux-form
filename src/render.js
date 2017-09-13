@@ -1,5 +1,5 @@
 import React from 'react'
-import { renderToString } from 'react-dom'
+import ReactDOM from 'react-dom/server'
 import App from './components/App'
 
 const render = ({ component, title, path, version, breadcrumbs }) =>
@@ -29,7 +29,7 @@ const render = ({ component, title, path, version, breadcrumbs }) =>
   </head>
   <body>
   <div id="content">
-    ${renderToString(
+    ${ReactDOM.renderToStaticMarkup(
       <App {...{ version, path, breadcrumbs }}>{component}</App>
     )}
   </div>

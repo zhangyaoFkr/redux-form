@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default ({ dark, width, height }) => (
+const Sponsor = ({ dark, width, height }) => (
   <div>
     <div
       id="code-sponsor-widget"
@@ -20,3 +20,10 @@ export default ({ dark, width, height }) => (
     />
   </div>
 )
+
+Sponsor.defaultProps = {
+  width: 250,
+  height: 250
+}
+
+export default Sponsor

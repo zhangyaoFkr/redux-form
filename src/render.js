@@ -37,6 +37,18 @@ const render = ({ component, title, path, version, breadcrumbs }) =>
   <script src="https://unpkg.com/react-dom@15.6.1/dist/react-dom.min.js" integrity="sha384-GfT+iyYg21YqdPMH/FWlWLugDiK/neASGRCN8yWPB2Hlam+uP7J0lIgPcbCeHoVG" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/redux-form-doc-version-checker/dist/doc-check.umd.min.js"></script>
   <script src="https://unpkg.com/redux-form-website-template/dist/bundle.js"></script>
+  <script src="https://m.servedby-buysellads.com/monetization.js" type="text/javascript"></script>
+  <script>
+    (function(){
+      if(typeof _bsa !== 'undefined' && _bsa) {
+        _bsa.init('default', 'CKYDV5QM', 'placement:reduxformcom', {
+          target: '.bsa-cpc',
+          align: 'horizontal',
+          disable_css: 'true'
+        })
+      }
+    })()
+  </script>
   <script>initReact(${JSON.stringify({ version, path, breadcrumbs })})</script>
   <script>
     (function(i,s,o,g,r,a,m){i[ 'GoogleAnalyticsObject' ] = r;i[r]=i[r]||function(){

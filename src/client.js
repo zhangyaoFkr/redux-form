@@ -13,3 +13,7 @@
 //       document.getElementById('content')
 //     )
 // }
+
+window.initReact = () => {
+  // noop
+}

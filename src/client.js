@@ -6,7 +6,7 @@ if (typeof window !== 'undefined') {
   // what a hack!! :-)
   const __html = document.getElementsByTagName('h1')[0].parentNode.innerHTML
   window.initReact = props =>
-    ReactDOM.render(
+    ReactDOM.hydrate(
       <App {...props}>
         <div dangerouslySetInnerHTML={{ __html }} />
       </App>,

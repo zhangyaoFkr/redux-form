@@ -3,7 +3,6 @@ import styles from './App.scss'
 import Home from './Home'
 import Nav from './Nav'
 import Breadcrumbs from './Breadcrumbs'
-import Carbon from './Carbon'
 import TwitterFollowButton from './TwitterFollowButton'
 import cx from 'classnames'
 
@@ -37,7 +36,6 @@ const App = ({ children, path, version, breadcrumbs }) => {
         </div>
         <div className={styles.footer}>
           {/*isHome && <Sponsor width={250} height={290} dark />*/}
-          <Carbon />
           <div>Created by Erik Rasmussen</div>
           <div>
             Got questions? Ask for help:

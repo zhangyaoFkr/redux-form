@@ -254,12 +254,15 @@ code {
 }
 
 :global(.benevolent-sponsor) {
-  a {
-    color: #ddd;
-    line-height: 1.3em;
-    padding: 5px 10px 10px 10px;
+  background: #2d2d2d;
+  & > a {
+    color: #ddd !important;
+    font-size: 1.2em !important;
+    line-height: 1.4em !important;
+    padding: 5px 15px 10px 15px !important;
+    color: #eee !important;
     &:hover {
-      background: none;
+      background: none !important;
     }
   }
   :global(.this-month) {

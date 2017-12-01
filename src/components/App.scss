@@ -252,3 +252,21 @@ code {
     }
   }
 }
+
+:global(.benevolent-sponsor) {
+  a {
+    color: #ddd;
+    line-height: 1.3em;
+    padding: 5px 10px 10px 10px;
+    &:hover {
+      background: none;
+    }
+  }
+  :global(.this-month) {
+    padding: 2px 5px;
+    font-size: 0.8em;
+    color: #aaa;
+    text-align: center;
+    font-style: italic;
+  }
+}

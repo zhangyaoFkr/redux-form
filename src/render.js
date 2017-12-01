@@ -9,10 +9,11 @@ const render = ({ component, title, path, version, breadcrumbs }) =>
     <meta charSet="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <title>Redux Form${title && ` - ${title}`}</title>
-    <link href="https://redux-form.com/${version}/bundle.css"
+    <link href="https://unpkg.com/redux-form-website-template/dist/bundle.css"
       media="screen, projection" rel="stylesheet" type="text/css"/>
     <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css"
           media="screen, projection" rel="stylesheet" type="text/css"/>
+    <link href="/carbon.css" media="screen, projection" rel="stylesheet" type="text/css"/>
     <meta itemprop="name" content="Redux Form"/>
     <meta property="og:type" content="website"/>
     <meta property="og:title" content="Redux Form"/>

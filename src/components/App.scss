@@ -1,8 +1,70 @@
-@import "./constants";
-@import "../vendor/prism";
-@import "./form";
+@import './constants';
+@import '../vendor/prism';
+@import './form';
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, figure {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+figure {
   margin: 0;
   padding: 0;
   border: 0;
@@ -12,12 +74,18 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 body {
-  font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans,
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   line-height: 1.4em;
   font-size: 14px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: bold;
   line-height: 1.2em;
   margin: 10px 0;
@@ -43,7 +111,10 @@ h4 {
   margin: 12px 0;
 }
 
-input, textarea, button, select {
+input,
+textarea,
+button,
+select {
   outline: none;
 }
 
@@ -55,11 +126,12 @@ li {
   margin-left: 20px;
 }
 
-:not(pre)>code[class*=language-], pre[class*=language-] {
+:not(pre) > code[class*='language-'],
+pre[class*='language-'] {
   background: none;
 }
 
-pre[class*=language-] {
+pre[class*='language-'] {
   margin: 0 15px;
   padding: 0;
 }
@@ -115,11 +187,13 @@ code {
   flex-flow: column nowrap;
   min-height: 100vh;
   min-width: 0;
-  p, li {
+  p,
+  li {
     font-size: 16px;
     line-height: 22px;
   }
-  code, a {
+  code,
+  a {
     font-size: 1em;
   }
   a {

@@ -1,3 +1,19 @@
+# Redux-form
+
+Redux-form registry of Caicloud.
+
+This is forked from https://github.com/erikras/redux-form. We use this repo to provide another version of redux-form while a lower version is existed and using in a web repo.
+
+# Publish
+
+To publish a caicloud-redux-form v6.8.0, please checkout to branch `caicloud-6.8.0`, and run
+```
+npm publish
+```
+
+# Original Readme from https://github.com/erikras/redux-form
+
+---
 # redux-form
 ---
 [<img src="http://npm.packagequality.com/badge/redux-form.png" align="right"/>](http://packagequality.com/#?package=redux-form)

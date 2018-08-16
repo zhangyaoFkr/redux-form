@@ -50,10 +50,11 @@ const createField = (structure: Structure<*, *>) => {
       const oldName = prefixName(this.context, this.props.name)
       const newName = prefixName(nextContext, nextProps.name)
 
+      // use deepEqual here because they could be a function or an array of functions
+      // NOTE(csm 2018-01-24): 会引起现有验证失效，暂且注释掉
+      // !plain.deepEqual(this.props.validate, nextProps.validate) ||
       if (
         oldName !== newName ||
-        // use deepEqual here because they could be a function or an array of functions
-        !plain.deepEqual(this.props.validate, nextProps.validate) ||
         !plain.deepEqual(this.props.warn, nextProps.warn)
       ) {
         // unregister old name

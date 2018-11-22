@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { submit, destroy } from 'caicloud-redux-form'
 import PropTypes from 'prop-types'
 import WizardFormFirstPage from './WizardFormFirstPage'
 import WizardFormSecondPage from './WizardFormSecondPage'
@@ -13,12 +14,22 @@ class WizardForm extends Component {
       page: 1
     }
   }
+
+  // destroy form will unmount
+  componentWillUnmount() {
+    this.props.dispatch(destroy('wizard'))
+  }
+
   nextPage() {
     this.setState({ page: this.state.page + 1 })
   }
 
   previousPage() {
     this.setState({ page: this.state.page - 1 })
+  }
+
+  remoteSubmit() {
+    this.props.dispatch(submit('wizard'))
   }
 
   render() {
@@ -39,6 +50,9 @@ class WizardForm extends Component {
             onSubmit={onSubmit}
           />
         )}
+        <button onClick={this.previousPage}>Pre</button>
+        <button onClick={this.nextPage}>Next</button>
+        <button onClick={this.remoteSubmit}>Submit</button>
       </div>
     )
   }

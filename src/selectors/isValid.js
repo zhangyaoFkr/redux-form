@@ -9,7 +9,8 @@ const createIsValid = (structure: Structure<*, *>) => {
   return (
     form: string,
     getFormState: ?GetFormState,
-    ignoreSubmitErrors: ?boolean = false
+    ignoreSubmitErrors: ?boolean = false,
+    shouldValidIgnoreRegisterCount: ?boolean = false
   ): IsValidInterface => (state: any) => {
     const nonNullGetFormState: GetFormState =
       getFormState || (state => getIn(state, 'form'))
@@ -38,16 +39,20 @@ const createIsValid = (structure: Structure<*, *>) => {
       return true
     }
 
-    return !keys(registeredFields)
-      .filter(name => getIn(registeredFields, `['${name}'].count`) > 0)
-      .some(name =>
-        hasError(
-          getIn(registeredFields, `['${name}']`),
-          syncErrors,
-          asyncErrors,
-          submitErrors
+    const shouldValidFieldNames = shouldValidIgnoreRegisterCount
+      ? keys(registeredFields)
+      : keys(registeredFields).filter(
+          name => getIn(registeredFields, `['${name}'].count`) > 0
         )
+
+    return !shouldValidFieldNames.some(name =>
+      hasError(
+        getIn(registeredFields, `['${name}']`),
+        syncErrors,
+        asyncErrors,
+        submitErrors
       )
+    )
   }
 }
 

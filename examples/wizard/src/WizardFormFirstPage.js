@@ -1,5 +1,5 @@
 import React from 'react'
-import { Field, reduxForm } from 'redux-form'
+import { Field, reduxForm } from 'caicloud-redux-form'
 import validate from './validate'
 import renderField from './renderField'
 
@@ -19,11 +19,6 @@ const WizardFormFirstPage = props => {
         component={renderField}
         label="Last Name"
       />
-      <div>
-        <button type="submit" className="next">
-          Next
-        </button>
-      </div>
     </form>
   )
 }
@@ -31,6 +26,7 @@ const WizardFormFirstPage = props => {
 export default reduxForm({
   form: 'wizard', // <------ same form name
   destroyOnUnmount: false, // <------ preserve form data
-  forceUnregisterOnUnmount: true, // <------ unregister fields on unmount
+  forceUnregisterOnUnmount: false, // <------ unregister fields on unmount
+  shouldValidIgnoreRegisterCount: true,
   validate
 })(WizardFormFirstPage)

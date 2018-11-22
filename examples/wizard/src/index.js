@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
 import { createStore, combineReducers } from 'redux'
-import { reducer as reduxFormReducer } from 'redux-form'
+import { reducer as reduxFormReducer } from 'caicloud-redux-form'
 import {
   App,
   Code,
@@ -67,7 +67,7 @@ let render = () => {
 
         <h2>Form</h2>
 
-        <WizardForm onSubmit={showResults} />
+        <WizardForm onSubmit={showResults} dispatch={store.dispatch} />
 
         <Values form="wizard" />
 

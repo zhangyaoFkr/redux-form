@@ -866,6 +866,7 @@ const createReduxForm = (structure: Structure<*, *>) => {
             setSubmitFailed,
             setSubmitSucceeded,
             shouldAsyncValidate,
+            shouldValidIgnoreRegisterCount,
             shouldValidate,
             shouldError,
             shouldWarn,
@@ -976,7 +977,8 @@ const createReduxForm = (structure: Structure<*, *>) => {
             getFormState,
             initialValues,
             enableReinitialize,
-            keepDirtyOnReinitialize
+            keepDirtyOnReinitialize,
+            shouldValidIgnoreRegisterCount
           } = props
           const formState = getIn(getFormState(state) || empty, form) || empty
           const stateInitial = getIn(formState, 'initial')
@@ -1006,8 +1008,18 @@ const createReduxForm = (structure: Structure<*, *>) => {
           const syncErrors = getIn(formState, 'syncErrors') || plain.empty
           const syncWarnings = getIn(formState, 'syncWarnings') || plain.empty
           const registeredFields = getIn(formState, 'registeredFields')
-          const valid = isValid(form, getFormState, false)(state)
-          const validExceptSubmit = isValid(form, getFormState, true)(state)
+          const valid = isValid(
+            form,
+            getFormState,
+            false,
+            shouldValidIgnoreRegisterCount
+          )(state)
+          const validExceptSubmit = isValid(
+            form,
+            getFormState,
+            true,
+            shouldValidIgnoreRegisterCount
+          )(state)
           const anyTouched = !!getIn(formState, 'anyTouched')
           const submitting = !!getIn(formState, 'submitting')
           const submitFailed = !!getIn(formState, 'submitFailed')

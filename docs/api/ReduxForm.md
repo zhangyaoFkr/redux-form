@@ -363,6 +363,14 @@ switch (trigger) {
 > The structure object being used internally for values. You may wish to use
 > `deepEqual` from the structure.
 
+#### `shouldValidIgnoreRegisterCount : boolean` [optional]
+
+> should ignore the filter of count while validate
+> Defaults to
+> `false`.
+
+多个子表单时 搭配 `forceUnregisterOnUnmount: false` 使用：表单会校验所有字段，以避免 unregister 被忽略的问题。
+
 #### `touchOnBlur : boolean` [optional]
 
 > marks fields as `touched` when the blur action is fired. Defaults to `true`.

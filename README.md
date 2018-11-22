@@ -2,6 +2,20 @@
 
 # redux-form
 
+Redux-form registry of Caicloud.
+
+This is forked from https://github.com/erikras/redux-form. We use this repo to provide another version of redux-form while a lower version is existed and using in a web repo.
+
+## Version
+
+- name: `@caicloud/redux-form`
+
+- first release: `1.0.0` based on `redux-form@7.2.1`
+
+| version | upstream version |
+| ------- | ---------------- |
+| 1.x     | 7.x              |
+
 ---
 
 [![NPM Version](https://img.shields.io/npm/v/redux-form.svg?style=flat)](https://www.npmjs.com/package/redux-form)

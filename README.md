@@ -2,6 +2,20 @@
 
 # redux-form
 
+Redux-form registry of Caicloud.
+
+This is forked from https://github.com/erikras/redux-form. We use this repo to provide another version of redux-form while a lower version is existed and using in a web repo.
+
+## Version
+
+- name: `@caicloud/redux-form`
+
+- first release: `1.0.0` based on `redux-form@7.2.1`
+
+| version | upstream version |
+| ------- | ---------------- |
+| 1.x     | 7.x              |
+
 ---
 
 [![NPM Version](https://img.shields.io/npm/v/redux-form.svg?style=flat)](https://www.npmjs.com/package/redux-form)
@@ -31,29 +45,29 @@ Redux-form is proudly sponsored by [Rollbar](https://cs.berry.sh/c/1c4ce130-ac45
 
 ## Documentation
 
-* [Getting Started](https://redux-form.com/7.2.1/docs/GettingStarted.md/)
-* [Examples](https://redux-form.com/7.2.1/examples/)
-* [API](https://redux-form.com/7.2.1/docs/api/)
-* [FAQ](https://redux-form.com/7.2.1/docs/faq/)
-* [Release Notes](https://github.com/erikras/redux-form/releases)
-* [Older Documentation](https://redux-form.com/7.2.1/docs/DocumentationVersions.md/)
+- [Getting Started](https://redux-form.com/7.2.1/docs/GettingStarted.md/)
+- [Examples](https://redux-form.com/7.2.1/examples/)
+- [API](https://redux-form.com/7.2.1/docs/api/)
+- [FAQ](https://redux-form.com/7.2.1/docs/faq/)
+- [Release Notes](https://github.com/erikras/redux-form/releases)
+- [Older Documentation](https://redux-form.com/7.2.1/docs/DocumentationVersions.md/)
 
 ## 🏖 Code Sandboxes 🏖
 
 You can play around with `redux-form` in these sandbox versions of the Examples.
 
-* [Simple Form](https://codesandbox.io/s/mZRjw05yp)
-* [Synchronous Validation](https://codesandbox.io/s/pQj03w7Y6)
-* [Field-Level Validation](https://codesandbox.io/s/PNQYw1kVy)
-* [Submit Validation](https://codesandbox.io/s/XoA5vXDgA)
-* [Asynchronous Blur Validation](https://codesandbox.io/s/nKlYo387)
-* [Initializing From State](https://codesandbox.io/s/MQnD536Km)
-* [Field Arrays](https://codesandbox.io/s/Ww4QG1Wx)
-* [Remote Submit](https://codesandbox.io/s/ElYvJR21K)
-* [Normalizing](https://codesandbox.io/s/L8KWERjDw)
-* [Immutable JS](https://codesandbox.io/s/ZVGJQBJMw)
-* [Selecting Form Values](https://codesandbox.io/s/gJOBWZMRZ)
-* [Wizard Form](https://codesandbox.io/s/0Qzz3843)
+- [Simple Form](https://codesandbox.io/s/mZRjw05yp)
+- [Synchronous Validation](https://codesandbox.io/s/pQj03w7Y6)
+- [Field-Level Validation](https://codesandbox.io/s/PNQYw1kVy)
+- [Submit Validation](https://codesandbox.io/s/XoA5vXDgA)
+- [Asynchronous Blur Validation](https://codesandbox.io/s/nKlYo387)
+- [Initializing From State](https://codesandbox.io/s/MQnD536Km)
+- [Field Arrays](https://codesandbox.io/s/Ww4QG1Wx)
+- [Remote Submit](https://codesandbox.io/s/ElYvJR21K)
+- [Normalizing](https://codesandbox.io/s/L8KWERjDw)
+- [Immutable JS](https://codesandbox.io/s/ZVGJQBJMw)
+- [Selecting Form Values](https://codesandbox.io/s/gJOBWZMRZ)
+- [Wizard Form](https://codesandbox.io/s/0Qzz3843)
 
 ## Videos
 

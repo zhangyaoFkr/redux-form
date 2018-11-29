@@ -107,6 +107,7 @@ export const fieldArrayFieldsPropTypes = {
   reduce: func.isRequired,
   remove: func.isRequired,
   removeAll: func.isRequired,
+  splice: func.isRequired,
   shift: func.isRequired,
   swap: func.isRequired,
   unshift: func.isRequired

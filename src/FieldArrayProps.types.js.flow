@@ -27,6 +27,7 @@ export type Fields = {
   remove(index: number): void,
   removeAll(): void,
   shift(): any,
+  splice(index: number, removeNum: number, value: any): void,
   some(callback: Function): boolean,
   swap(from: number, to: number): void,
   unshift(value: any): void

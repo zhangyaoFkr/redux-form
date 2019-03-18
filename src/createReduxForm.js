@@ -249,6 +249,8 @@ export type Props = {
   setSubmitSucceeded: SetSubmitSucceededAction,
   shouldAsyncValidate: ShouldAsyncValidateFunction,
   shouldValidate: ShouldValidateFunction,
+  // 提交时校验所有注册过的 field (即使 unregistered)
+  shouldValidIgnoreRegisterCount: boolean,
   shouldError: ShouldErrorFunction,
   shouldWarn: ShouldWarnFunction,
   startAsyncValidation: StartAsyncValidationAction,

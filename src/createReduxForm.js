@@ -240,6 +240,7 @@ export type Props = {
   setSubmitSucceeded: SetSubmitSucceededAction,
   shouldAsyncValidate: ShouldAsyncValidateFunction,
   shouldValidate: ShouldValidateFunction,
+  shouldValidIgnoreRegisterCount: boolean,
   shouldError: ShouldErrorFunction,
   shouldWarn: ShouldWarnFunction,
   startAsyncValidation: StartAsyncValidationAction,
@@ -539,7 +540,7 @@ const createReduxForm = (structure: Structure<*, *>) => {
 
         componentDidMount() {
           if (!isHotReloading()) {
-            this.initIfNeeded()
+            this.initIfNeeded(this.props)
             this.validateIfNeeded()
             this.warnIfNeeded()
           }

@@ -199,6 +199,7 @@ function createReducer<M, L>(structure: Structure<M, L>) {
       if (initial === undefined && payload === '') {
         result = deleteInWithCleanUp(result, `values.${field}`)
       }
+      // Prevent blur reducer sets value in store.
       // else if (payload !== undefined) {
       //   result = setIn(result, `values.${field}`, payload)
       // }

@@ -1,6 +1,6 @@
 {
   "name": "@caicloud/redux-form",
-  "version": "1.0.2-alpha1",
+  "version": "1.0.3-alpha.1",
   "description": "A higher order component decorator for forms using Redux and React",
   "main": "./lib/index.js",
   "module": "./es/index.js",

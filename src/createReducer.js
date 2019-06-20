@@ -198,9 +198,10 @@ function createReducer<M, L>(structure: Structure<M, L>) {
       const initial = getIn(result, `initial.${field}`)
       if (initial === undefined && payload === '') {
         result = deleteInWithCleanUp(result, `values.${field}`)
-      } else if (payload !== undefined) {
-        result = setIn(result, `values.${field}`, payload)
       }
+//       else if (payload !== undefined) {
+//         result = setIn(result, `values.${field}`, payload)
+//       }
       if (field === getIn(result, 'active')) {
         result = deleteIn(result, 'active')
       }
